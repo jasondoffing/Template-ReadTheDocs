@@ -19,6 +19,7 @@
         <nav data-toggle="wy-nav-shift" class="wy-nav-side">
             <div class="wy-side-nav-search">
                 <a href="{{ baseUrl }}/" class="fa fa-home"> {{ title|default('The title') }}</a>
+                <input id="search-input" type="text" class="form-control" placeholder="Search...">
             </div>
 
             <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
@@ -82,6 +83,16 @@
             hljs.initHighlightingOnLoad();
         });
     </script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"/>
+   <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+   <script type="text/javascript">
+     docsearch({
+               appId: 'B5JSM24SAO',
+               apiKey: '27d01769bef2cde451e25d903fc8f1b1',
+               indexName: 'brian_test',
+               inputSelector: '#search-input'
+           });
+   </script>
 </body>
 </html>
